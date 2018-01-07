@@ -1,0 +1,56 @@
+digraph {
+	graph [bgcolor="#333333" fontcolor=yellow fontsize=16 label="Cube Science Model" rankdir=BT]
+	node [color=white fillcolor="#006699" fontcolor=white fontname=Helvetica shape=oval style=filled]
+	edge [arrowhead=open color=white fontcolor=white fontname=Courier fontsize=12 style=dashed]
+	Z [label="Cube Manager"]
+	{
+		A [label="Data Manager"]
+		B [label="Cube Pool"]
+		C [label="Draft Data"]
+		D [label="Reconstruction Tools"]
+		E [label="Regeneration Tools"]
+		B -> A [label="is managed by"]
+		C -> A [label="is managed by"]
+		D -> A [label="is used by"]
+		E -> A [label="is used by"]
+		D -> C [label="is used to rebuild"]
+		C -> E [label="is used by"]
+		E -> B [label="is used to rebuild"]
+		C -> D [label="provides data for"]
+	}
+	{
+		F [label="Analytic Module"]
+		G [label="Player Rankings"]
+		H [label="Player Similarity"]
+		I [label="Deck Similarity"]
+		J [label="Card Rankings"]
+		K [label="Archetype Detection"]
+		L [label="Archetype Classifier"]
+		M [label="Archetype Rankings"]
+		G -> F [label="is a part of"]
+		H -> F [label="is a part of"]
+		I -> F [label="is a part of"]
+		J -> F [label="is a part of"]
+		K -> F [label="is a part of"]
+		L -> F [label="is a part of"]
+		M -> F [label="is a part of"]
+	}
+	{
+		P [label="Tournament Manager"]
+		R [label="Seeding Engine"]
+		S [label="Score Calculator"]
+		S -> P [label="calculates scores for"]
+		R -> P [label="is used by"]
+	}
+	{
+		N [label="Drafting Bot"]
+		O [label="Recommendation System"]
+		O -> N [label="is used for"]
+	}
+	A -> Z [color=red weight=2]
+	F -> Z [color=red weight=2]
+	A -> F [label="provides data for" color=red weight=2]
+	N -> Z [color=red weight=2]
+	P -> Z [color=red weight=2]
+	S -> D [label="is used by" color=red weight=2]
+}
