@@ -13,3 +13,4 @@
 | 07.01.18 | Statistics_2017 |Added win rates for colors and main archetypes|
 | 07.01.18 | Statistics_2017 |Added games and matches win rates for cards|
 | 07.01.18 | Score Calculator |Added graph generation for players from all games and matches (one year)|
+| 20.01.18 | Statistics_2017|Added color-matches and archetype-matches, also with graphs for statistics and score calculations|
