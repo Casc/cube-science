@@ -14,3 +14,18 @@
 | 07.01.18 | Statistics_2017 |Added games and matches win rates for cards|
 | 07.01.18 | Score Calculator |Added graph generation for players from all games and matches (one year)|
 | 20.01.18 | Statistics_2017|Added color-matches and archetype-matches, also with graphs for statistics and score calculations|
+| 4.03.18 | Data Manager | New module to take care of loading and saving data about decks, card and matches |
+| 4.03.18 | Data Manager | Moved data loading functions to Loader() class, added loading AllCards.json from the website|
+| 4.03.18 | Data Manager | Added loading draft-player-archetype data|
+| 4.03.18 | Data Manager | Added method that finds incorrect names in the decklists data|
+| 4.03.18 | Data Manager | Added method that correct incorrect names in all decklists data and methd for the same with cube list|
+
+
+Next: build sub-library with relevant card data and store it in another json file
+      improve entering matches data with some good input pattern (p1 s1 p2 s2 .txt file --> matches.json)
+      possibly stop using nodejs input scripting and go full python (but keep it in json anyway)
+      move data_manager from notebook to an imported library module
+      graph_module
+      score_calculator
+      
+      a lot of refactorization incoming, less code, more re-use
