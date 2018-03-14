@@ -21,13 +21,15 @@
 | 4.03.18 | Data Manager | Added method that correct incorrect names in all decklists data and methd for the same with cube list|
 | 10.03.18 | Data Manager | Added Converter() and Saver() classes, added conversion of matches from .txt to .json format|
 | 10.03.18 | Data Manager | Added method to prepare matches for draft coverage to the Converter class|
-| 11.03.18| Data Manager | Added method to load draft decklists from .txt file in more convenient format to Loader class|
+| 11.03.18 | Data Manager | Added method to load draft decklists from .txt file in more convenient format to Loader class|
+| 11.03.18 | Data Manager | Added method that converts decklists from .txt to .json and also changes numbers to cardnames |
+| 14.03.18 | Score Calculator | Added method that takes .json file with matches and saves score table in .md format for coverage|
+| 14.03.18 | Data Manager | Added method to convert draft data from .json to prepared decklists for coverage in .txt format |
 
 
 Next: build sub-library with relevant card data and store it in another json file
-      --> possibly stop using nodejs input scripting and go full python (but keep it in json anyway)
+      --> add method that takes decks from .json format and prepares readable lists in .txt 
       add coverage module that will take new draft data and convert them to convenient .txt
-      make tables by score calculator for coverage
       move data_manager from notebook to an imported library module
       graph_module
       score_calculator
