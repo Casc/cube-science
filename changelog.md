@@ -25,13 +25,31 @@
 | 11.03.18 | Data Manager | Added method that converts decklists from .txt to .json and also changes numbers to cardnames |
 | 14.03.18 | Score Calculator | Added method that takes .json file with matches and saves score table in .md format for coverage|
 | 14.03.18 | Data Manager | Added method to convert draft data from .json to prepared decklists for coverage in .txt format |
+| 18.03.18 | Task Order | Some task management stuff to decide what is the next move and why |
+| 31.05.18 | Data Manager | Generated some funny aliases for players|
+| 31.05.18 | Data Manager | Added method to Converter that replaces all player names with generated aliases|
+| 31.05.18 | Data Manager | Converted all matches to use player aliases and saved as aliases_matches to be committed to repo|
+| 20.07.18 | Reconstruction | Added new module for reconstruction of cube lists, along with visual representation of changes|
 
+Next tasks:
+1. Find decklists data from three first drafts from 2015
+2. Build sub-library with relevant card data and store it in another json file
+3. Convert all known decklists to .json files and re-run the reconstruction module
 
-Next: build sub-library with relevant card data and store it in another json file
-      --> add method that takes decks from .json format and prepares readable lists in .txt 
-      add coverage module that will take new draft data and convert them to convenient .txt
-      move data_manager from notebook to an imported library module
-      graph_module
-      score_calculator
+So all necessary data will be available in the system (probably also with the draft 4/2018). Next step would be to divide current jupyter notebooks into modules that are just imported to one notebook for various purposes, so there is more order. 
+3. Move data loader to exterior module
+4. Move analytics / statistics to exterior module
+5. Move score calaculator to exterior module
+6. Move seeding engine to exterior module
+7. Move coverage to exterior module
+
+After that, there will be time to finally go with currently blocked tasks, like:
+10. Build win ratio matrix based on all known matches for players and for archetypes
+11. Build swiss round builder
+12. Build seeding engine
+
+Next:
+      add coverage module that will take new draft data and convert them to convenient .txt formatted as .md
+
       
-      a lot of refactorization incoming, less code, more re-use
+      a lot of refactorization incoming, less code, more code re-use
