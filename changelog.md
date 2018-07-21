@@ -30,6 +30,7 @@
 | 31.05.18 | Data Manager | Added method to Converter that replaces all player names with generated aliases|
 | 31.05.18 | Data Manager | Converted all matches to use player aliases and saved as aliases_matches to be committed to repo|
 | 20.07.18 | Reconstruction | Added new module for reconstruction of cube lists, along with visual representation of changes|
+| 21.07.18 | Reconstruction | Added method to visually show known card growth after each iteration of aggregation.
 
 Next tasks:
 1. Find decklists data from three first drafts from 2015
