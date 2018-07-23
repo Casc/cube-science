@@ -30,12 +30,14 @@
 | 31.05.18 | Data Manager | Added method to Converter that replaces all player names with generated aliases|
 | 31.05.18 | Data Manager | Converted all matches to use player aliases and saved as aliases_matches to be committed to repo|
 | 20.07.18 | Reconstruction | Added new module for reconstruction of cube lists, along with visual representation of changes|
-| 21.07.18 | Reconstruction | Added method to visually show known card growth after each iteration of aggregation.
+| 21.07.18 | Reconstruction | Added method to visually show known card growth after each iteration of aggregation.|
+| 23.07.18 | Data | Added last known decks from 2012-2015 period|
+| 23.07.18 | Data Manager | Converted all decks from .txt to .json format|
+| 23.07.18 | Data Manager | Added extension for correcting the cardnames in past decklists, refreshed the allcards.json to newest version available|
 
 Next tasks:
-1. Find decklists data from three first drafts from 2015
 2. Build sub-library with relevant card data and store it in another json file
-3. Convert all known decklists to .json files and re-run the reconstruction module
+ and re-run the reconstruction module
 
 So all necessary data will be available in the system (probably also with the draft 4/2018). Next step would be to divide current jupyter notebooks into modules that are just imported to one notebook for various purposes, so there is more order. 
 3. Move data loader to exterior module
