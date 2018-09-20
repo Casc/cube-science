@@ -34,25 +34,38 @@
 | 23.07.18 | Data | Added last known decks from 2012-2015 period|
 | 23.07.18 | Data Manager | Converted all decks from .txt to .json format|
 | 23.07.18 | Data Manager | Added extension for correcting the cardnames in past decklists, refreshed the allcards.json to newest version available|
+| 24.07.18 | Archetype Workshop |Added method to load only signifficant card data - used|
+| 28.07.18 | Data Manager | Added method that updates the numbered_X_Y file by using changes_X_Y.txt file and latest cube list|
+| 18.09.18 | Archetype Workshop | Removed 'min CMC' as not relevant, added creature density, power to toughness, power to cmc and toughness to cmc parameters, also added deck ID (player name plus draft number)|
+| 18.09.18 | Archetype Workshop | Pre-analysis step one - converting data to data frame and generating histograms for all numeric variables |
+| 18.09.18 | Archetype Workshop | Pre-analysis step two - find minimal and maximal values for each parameter, needed for normalizaction |
+| 20.09.18 | Task Order | Updated changelog file along with planned tasks and order fo them. Prioritised Archetype Workshop for time being |
 
 Next tasks:
-2. Build sub-library with relevant card data and store it in another json file
- and re-run the reconstruction module
 
-So all necessary data will be available in the system (probably also with the draft 4/2018). Next step would be to divide current jupyter notebooks into modules that are just imported to one notebook for various purposes, so there is more order. 
-3. Move data loader to exterior module
-4. Move analytics / statistics to exterior module
-5. Move score calaculator to exterior module
-6. Move seeding engine to exterior module
-7. Move coverage to exterior module
+(--> Archetype Workshop track)
+1. Generate scatterplots for each numerical parameters pair to look for some corelation
+2. Normalize data present in data frame to make it from 0.0 to 1.0 (standard formula: (value - min(values))/(max(values) - min(values))
+3. Define function that calculates the distance between two decks, in n-dimensional space (n = number of parameters)
+4. Calculate all distances between all known decks (220 at this point) and keep it as distance matrice
+5. For each deck find a deck that is closest to this specific deck when using these metrics
+6. Generate graphviz visualisation where every deck has edge / arrow to closest deck and see what happens (look for some groups)
+7. Experiment with some radiuses  to try classiy the decks
 
-After that, there will be time to finally go with currently blocked tasks, like:
-10. Build win ratio matrix based on all known matches for players and for archetypes
-11. Build swiss round builder
-12. Build seeding engine
+(--> Seeding Engine track)
+8.  Build win ratio matrix based on all known matches for players and for archetypes
+9.  Build swiss round builder
+10. Build seeding engine
 
-Next:
-      add coverage module that will take new draft data and convert them to convenient .txt formatted as .md
+(--> Code refactoring work)
+11.  Move data loader to exterior module
+12. Move analytics / statistics to exterior module
+13. Move seeding engine to exterior module
+14. Move coverage to exterior module
 
-      
-      a lot of refactorization incoming, less code, more code re-use
+Divide current jupyter notebooks into modules that are just imported to one notebook for various purposes, so there is more order. 
+
+(--> Coverage Module track)
+15. Add coverage module that will take new draft data and convert them to convenient .txt formatted as .md
+16. Add coverage module that makes a .html with visual decklists
+17. Automated coverage so only comments for matches, introduction and summary need to be added, nothing more.
