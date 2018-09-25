@@ -40,6 +40,8 @@
 | 18.09.18 | Archetype Workshop | Pre-analysis step one - converting data to data frame and generating histograms for all numeric variables |
 | 18.09.18 | Archetype Workshop | Pre-analysis step two - find minimal and maximal values for each parameter, needed for normalizaction |
 | 20.09.18 | Task Order | Updated changelog file along with planned tasks and order fo them. Prioritised Archetype Workshop for time being |
+| 25.09.18 | Archetype Workshop | Histograms moved to new method |
+| 25.09.18 | Archetype Workshop | Added scatter plots for each pair of numerical parameters, with archetype coloring |
 
 Next tasks:
 
