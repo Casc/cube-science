@@ -44,15 +44,18 @@
 | 25.09.18 | Archetype Workshop | Added scatter plots for each pair of numerical parameters, with archetype coloring |
 | 26.09.18 | Archetype Workshop | Remove MedianCMC parameter and add normalization for data frame |
 | 26.09.18 | Archetype Workshop | Normalized data to normalized data frame which will be used to calculate distance |
+| 27.09.18 | Archetype Workshop | Added method that converts data from normalized_pre_df to dict with coordinates |
+| 27.09.18 | Archetype Workshop | Added method that calculates distance between two sets of deck coordinates |
+| 27.09.18 | Archetype Workshop | Added method that finds the closest deck for each deck and shows the distance |
 
 Next tasks:
 
 (--> Archetype Workshop track)
 DONE 1. Generate scatterplots for each numerical parameters pair to look for some corelation
 DONE 2. Normalize data present in data frame to make it from 0.0 to 1.0 (standard formula: (value - min(values))/(max(values) - min(values))
-3. Define function that calculates the distance between two decks, in n-dimensional space (n = number of parameters)
-4. Calculate all distances between all known decks (220 at this point) and keep it as distance matrice
-5. For each deck find a deck that is closest to this specific deck when using these metrics
+DONE 3. Define function that calculates the distance between two decks, in n-dimensional space (n = number of parameters)
+NOT NECESSARY 4. Calculate all distances between all known decks (220 at this point) and keep it as distance matrice 
+DONE 5. For each deck find a deck that is closest to this specific deck when using these metrics
 6. Generate graphviz visualisation where every deck has edge / arrow to closest deck and see what happens (look for some groups)
 7. Experiment with some radiuses  to try classify the decks
 7a. Try classification with kNN method without and with weighted votes
