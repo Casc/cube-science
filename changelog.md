@@ -47,6 +47,8 @@
 | 27.09.18 | Archetype Workshop | Added method that converts data from normalized_pre_df to dict with coordinates |
 | 27.09.18 | Archetype Workshop | Added method that calculates distance between two sets of deck coordinates |
 | 27.09.18 | Archetype Workshop | Added method that finds the closest deck for each deck and shows the distance |
+| 1.11.18 | Cube Science Modules Visual | Added graph representing current progress on Archetype Workshop module |
+| 1.11.18 | Archetype Workshop | Added Card Vote method as second method for the classification, defined next steps |
 
 Next tasks:
 
@@ -57,8 +59,10 @@ DONE 3. Define function that calculates the distance between two decks, in n-dim
 NOT NECESSARY 4. Calculate all distances between all known decks (220 at this point) and keep it as distance matrice 
 DONE 5. For each deck find a deck that is closest to this specific deck when using these metrics
 6. Generate graphviz visualisation where every deck has edge / arrow to closest deck and see what happens (look for some groups)
-7. Experiment with some radiuses  to try classify the decks
+7. Experiment with some radiuses to try classify the decks (find center of each archetype
 7a. Try classification with kNN method without and with weighted votes
+7b. Try classification with parameter vote
+DONE 7c. Try classification with card vote (each card votes for some archetype)
 
 (--> Seeding Engine track)
 8.  Build win ratio matrix based on all known matches for players and for archetypes
