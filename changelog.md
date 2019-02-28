@@ -49,6 +49,8 @@
 | 27.09.18 | Archetype Workshop | Added method that finds the closest deck for each deck and shows the distance |
 | 1.11.18 | Cube Science Modules Visual | Added graph representing current progress on Archetype Workshop module |
 | 1.11.18 | Archetype Workshop | Added Card Vote method as second method for the classification, defined next steps |
+| 18.11.18 | Archetype Workshop | Added Center Point method as third method for classification, seems that it has low accurancy|
+| 28.02.19 | Archetype Workshop | Added Parameter Vote method asfourth method. Unfortunately it doesn't seem to be very effective, only like 41 percent|
 
 Next tasks:
 
@@ -61,7 +63,7 @@ DONE 5. For each deck find a deck that is closest to this specific deck when usi
 6. Generate graphviz visualisation where every deck has edge / arrow to closest deck and see what happens (look for some groups)
 7. Experiment with some radiuses to try classify the decks (find center of each archetype
 7a. Try classification with kNN method without and with weighted votes
-7b. Try classification with parameter vote
+DONE 7b. Try classification with parameter vote
 DONE 7c. Try classification with card vote (each card votes for some archetype)
 
 (--> Seeding Engine track)
