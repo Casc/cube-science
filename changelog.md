@@ -53,6 +53,7 @@
 | 28.02.19 | Archetype Workshop | Added Parameter Vote method as fourth method. Unfortunately it doesn't seem to be very effective, only like 41 percent|
 | 4.08.19 | Archetype Workshop | Added gathering information about the classification process for further investigation|
 | 4.08.19 | Archetype Workshop | Saving, loading and analysis of the classification done by all methods. Updating decks|
+| 2.11.19 | Archetype Workshop | Added unweighted kNN method as a fifth classification method. Tried weighted without good results|
 
 Next tasks:
 
@@ -64,14 +65,14 @@ NOT NECESSARY 4. Calculate all distances between all known decks (220 at this po
 DONE 5. For each deck find a deck that is closest to this specific deck when using these metrics
 6. Generate graphviz visualisation where every deck has edge / arrow to closest deck and see what happens (look for some groups)
 DONE 7. Experiment with some radiuses to try classify the decks (find center of each archetype - CenterPoint Method)
-7a. Try classification with kNN method without and with weighted votes
+DONE 7a. Try classification with kNN method without and with weighted votes
 DONE 7b. Try classification with parameter vote
 DONE 7c. Try classification with card vote (each card votes for some archetype)
 7d. Add TaggedVote method of classification
 7e. Add MethodVote method for classifcation (or even weighted method vote - later)
 7f. Examine methods accuracy for different volume of data
 
-(--> Seeding Engine track)
+(--> Seeding Engine track) ? LOW PRIORITY
 8.  Build win ratio matrix based on all known matches for players and for archetypes
 9.  Build swiss round builder
 10. Build seeding engine
