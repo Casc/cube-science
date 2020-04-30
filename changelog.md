@@ -54,8 +54,21 @@
 | 4.08.19 | Archetype Workshop | Added gathering information about the classification process for further investigation|
 | 4.08.19 | Archetype Workshop | Saving, loading and analysis of the classification done by all methods. Updating decks|
 | 2.11.19 | Archetype Workshop | Added unweighted kNN method as a fifth classification method. Tried weighted without good results|
+|25.04.20 | Coverage Module | Lodaing decklists, converting to img list, html template, header, basics, background, all decks, convert to .pdf file |
+|29.04.20 | Coverage Module | Add missing images, convert card image names, move to linux version|
+|30.04.20 | Coverage Module | Add missing images, convert all decks, update log, committ coverageModule|
 
 Next tasks:
+
+(--> Coverage Module track )
+C1. Fix basics names in files from lower to capitalized case (data issue)
+C2. Add formatted table with matches to the coverage
+C3. Integrate score calculator and make it create fromatted table
+C4. Integrate with old coverage module
+C5. Build entire pipeline: IN (decklists, matches) OUT (visual coverage, text decklists)
+C6. Add optional introduction, comment for draft and for matches
+DONE Add coverage module that makes a .html with visual decklists
+
 
 (--> Archetype Workshop track)
 DONE 1. Generate scatterplots for each numerical parameters pair to look for some corelation
@@ -85,7 +98,3 @@ DONE 7c. Try classification with card vote (each card votes for some archetype)
 
 Divide current jupyter notebooks into modules that are just imported to one notebook for various purposes, so there is more order. 
 
-(--> Coverage Module track)
-15. Add coverage module that will take new draft data and convert them to convenient .txt formatted as .md
-16. Add coverage module that makes a .html with visual decklists
-17. Automated coverage so only comments for matches, introduction and summary need to be added, nothing more.
