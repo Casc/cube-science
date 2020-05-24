@@ -57,18 +57,21 @@
 |25.04.20 | Coverage Module | Lodaing decklists, converting to img list, html template, header, basics, background, all decks, convert to .pdf file |
 |29.04.20 | Coverage Module | Add missing images, convert card image names, move to linux version|
 |30.04.20 | Coverage Module | Add missing images, convert all decks, update log, committ coverageModule|
+|23.05.20 | Tag Analytics | New sub-module to clean all tagging done for relevant cards (PC)|
+|24.05.20 | Tag Analytics | Tag cleaning finished, most likely not all of them will be used |
+|24.05.20 | Reconstruction Module | Added method that saves all reconstructed cube lists to new 'reconstructed' directory|
+|25.05.20 | General | Updated changelog and task lists for future enhancements |
 
 Next tasks:
 
 (--> Coverage Module track )
 C1. Fix basics names in files from lower to capitalized case (data issue)
 C2. Add formatted table with matches to the coverage
-C3. Integrate score calculator and make it create fromatted table
+C3. Integrate score calculator and make it create formatted table
 C4. Integrate with old coverage module
 C5. Build entire pipeline: IN (decklists, matches) OUT (visual coverage, text decklists)
 C6. Add optional introduction, comment for draft and for matches
 DONE Add coverage module that makes a .html with visual decklists
-
 
 (--> Archetype Workshop track)
 DONE 1. Generate scatterplots for each numerical parameters pair to look for some corelation
@@ -85,16 +88,28 @@ DONE 7c. Try classification with card vote (each card votes for some archetype)
 7e. Add MethodVote method for classifcation (or even weighted method vote - later)
 7f. Examine methods accuracy for different volume of data
 
-(--> Seeding Engine track) ? LOW PRIORITY
+(--> Synergy Checker ) new module idea
+S1. Design algorithm for synergy checking
+S2. Prepare 'proof of concept' with small ammount of cards to see if it works
+
+(--> Database Module ) 
+D1. Create script to generate SQL inserts for matches
+D2. Create script to generate SQL inserts for decks
+D3. Create script to generate SQL inserts for cubes
+D4. Create script to generate SQL inserts for relevant cards
+D5. Create script to generate SQL inserts for tags
+D6. Create script to generate SQL inserts for decklists
+
+(--> Seeding Engine track) ? LOW PRIORITY?
 8.  Build win ratio matrix based on all known matches for players and for archetypes
 9.  Build swiss round builder
 10. Build seeding engine
 
 (--> Code refactoring work)
-11.  Move data loader to exterior module
+11. Move data loader to exterior module
 12. Move analytics / statistics to exterior module
 13. Move seeding engine to exterior module
 14. Move coverage to exterior module
+15. Create file with all relevant paths to be loaded by any module
 
 Divide current jupyter notebooks into modules that are just imported to one notebook for various purposes, so there is more order. 
-
