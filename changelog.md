@@ -54,13 +54,15 @@
 | 4.08.19 | Archetype Workshop | Added gathering information about the classification process for further investigation|
 | 4.08.19 | Archetype Workshop | Saving, loading and analysis of the classification done by all methods. Updating decks|
 | 2.11.19 | Archetype Workshop | Added unweighted kNN method as a fifth classification method. Tried weighted without good results|
-|25.04.20 | Coverage Module | Lodaing decklists, converting to img list, html template, header, basics, background, all decks, convert to .pdf file |
+|25.04.20 | Coverage Module | Loading decklists, converting to img list, html template, header, basics, background, all decks, convert to .pdf file |
 |29.04.20 | Coverage Module | Add missing images, convert card image names, move to linux version|
 |30.04.20 | Coverage Module | Add missing images, convert all decks, update log, committ coverageModule|
 |23.05.20 | Tag Analytics | New sub-module to clean all tagging done for relevant cards (PC)|
 |24.05.20 | Tag Analytics | Tag cleaning finished, most likely not all of them will be used |
 |24.05.20 | Reconstruction Module | Added method that saves all reconstructed cube lists to new 'reconstructed' directory|
 |25.05.20 | General | Updated changelog and task lists for future enhancements |
+| 19.07.20 |Synergy Checker | Added PoC of new module synergyChecker (not to be added soon)|
+| 22.07.20 | Tag Analytics | tagAnalytics module initial commit (before re-factorization|
 
 Next tasks:
 
@@ -86,11 +88,14 @@ DONE 7b. Try classification with parameter vote
 DONE 7c. Try classification with card vote (each card votes for some archetype)
 7d. Add TaggedVote method of classification
 7e. Add MethodVote method for classifcation (or even weighted method vote - later)
-7f. Examine methods accuracy for different volume of data
+7f. Examine methods accuracy for different volumes of data (from 100 to 300 decks)
+8. Add cardCloud method (calculate 1-2-3 step neighborhood for each deck)
+9. Open classification = find deck groups but don't give them archetype name
+10. Refactor tagAnalytics module
 
 (--> Synergy Checker ) new module idea
-S1. Design algorithm for synergy checking
-S2. Prepare 'proof of concept' with small ammount of cards to see if it works
+DONE S1. Design algorithm for synergy checking
+DONE S2. Prepare 'proof of concept' with small ammount of cards to see if it works
 
 (--> Database Module ) 
 D1. Create script to generate SQL inserts for matches
