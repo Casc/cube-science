@@ -65,14 +65,15 @@
 | 22.07.20 | Tag Analytics | tagAnalytics module initial commit (before re-factorization|
 | 24.07.20 | Archetype Worksop | Updated table to more readable, swapped rows with columns (each columns represents score from one method | 
 | 30.07.20 | Coverage Module | Changed filename, added scoreCalculator as class, added score table to the html file |
+| 31.07.20 | Coverage Module | Add match table to the html file, now full coverage (decks, matches, scores) is generated for draft |
 
 Next tasks:
 
 (--> Coverage Module track )
 C1. Fix basics names in files from lower to capitalized case (data issue)
-C2. Add formatted table with matches to the coverage
+DONE C2. Add formatted table with matches to the coverage
 DONE C3. Integrate score calculator and make it create formatted table
-C4. Integrate with old coverage module (? possibly not relevant)
+C4. Integrate with old coverage module (? add .txt decklists)
 C5. Build entire pipeline: IN (decklists, matches) OUT (visual coverage, text decklists)
 C6. Add optional introduction, comment for draft and for matches
 DONE Add coverage module that makes a .html with visual decklists
