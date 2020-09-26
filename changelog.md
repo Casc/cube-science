@@ -66,6 +66,7 @@
 | 24.07.20 | Archetype Worksop | Updated table to more readable, swapped rows with columns (each columns represents score from one method | 
 | 30.07.20 | Coverage Module | Changed filename, added scoreCalculator as class, added score table to the html file |
 | 31.07.20 | Coverage Module | Add match table to the html file, now full coverage (decks, matches, scores) is generated for draft |
+| 26.09.20 | Coverage Module | Moved prepareDecklistsForCoverage (text) from Data Manager to Coverage Module |
 
 Next tasks:
 
@@ -73,7 +74,7 @@ Next tasks:
 C1. Fix basics names in files from lower to capitalized case (data issue)
 DONE C2. Add formatted table with matches to the coverage
 DONE C3. Integrate score calculator and make it create formatted table
-C4. Integrate with old coverage module (? add .txt decklists)
+DONE C4. Integrate with old coverage module (? add .txt decklists)
 C5. Build entire pipeline: IN (decklists, matches) OUT (visual coverage, text decklists)
 C6. Add optional introduction, comment for draft and for matches
 DONE Add coverage module that makes a .html with visual decklists
@@ -90,6 +91,9 @@ DONE 7a. Try classification with kNN method without and with weighted votes
 DONE 7b. Try classification with parameter vote
 DONE 7c. Try classification with card vote (each card votes for some archetype)
 7d. Add TaggedVote method of classification
+7da. Add Tagged KNN11 method
+7db. Add Tagged Center Point Method
+7dc. Add TagVoe method (each tags votes fo archetype (similar to prameterVote)
 7e. Add MethodVote method for classifcation (or even weighted method vote - later)
 7f. Examine methods accuracy for different volumes of data (from 100 to 300 decks) -- use random subsets for data (generate data subsets first for each data point, use same data sets for each method -- from average
 8. Add cardCloud method (calculate 1-2-3 step neighborhood for each deck)
