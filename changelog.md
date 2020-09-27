@@ -67,6 +67,7 @@
 | 30.07.20 | Coverage Module | Changed filename, added scoreCalculator as class, added score table to the html file |
 | 31.07.20 | Coverage Module | Add match table to the html file, now full coverage (decks, matches, scores) is generated for draft |
 | 26.09.20 | Coverage Module | Moved prepareDecklistsForCoverage (text) from Data Manager to Coverage Module |
+| 27.09.20 | Card Analytics | Added calculating expected and actula card popularity, saving results as .csv file |
 
 Next tasks:
 
@@ -103,6 +104,9 @@ DONE 7c. Try classification with card vote (each card votes for some archetype)
 (--> Synergy Checker ) new module idea
 DONE S1. Design algorithm for synergy checking
 DONE S2. Prepare 'proof of concept' with small ammount of cards to see if it works
+
+(--> Card Analytics )
+TODO 1. Visualise expected and actual card popularity over time (matplot lib, save images, possibly as .pdf)
 
 (--> Database Module ) 
 D1. Create script to generate SQL inserts for matches
