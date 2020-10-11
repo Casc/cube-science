@@ -68,6 +68,7 @@
 | 31.07.20 | Coverage Module | Add match table to the html file, now full coverage (decks, matches, scores) is generated for draft |
 | 26.09.20 | Coverage Module | Moved prepareDecklistsForCoverage (text) from Data Manager to Coverage Module |
 | 27.09.20 | Card Analytics | Added calculating expected and actula card popularity, saving results as .csv file |
+| 11.10.20 | Card Analytics | Added plot generating for accumulated average and saving these plots to 'popularity' directory |
 
 Next tasks:
 
@@ -106,7 +107,8 @@ DONE S1. Design algorithm for synergy checking
 DONE S2. Prepare 'proof of concept' with small ammount of cards to see if it works
 
 (--> Card Analytics )
-TODO 1. Visualise expected and actual card popularity over time (matplot lib, save images, possibly as .pdf)
+DONE 1. Visualise expected and actual card popularity over time (matplot lib, save images)
+TODO 2. Add template and generate .pdf file
 
 (--> Database Module ) 
 D1. Create script to generate SQL inserts for matches
