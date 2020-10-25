@@ -69,6 +69,7 @@
 | 26.09.20 | Coverage Module | Moved prepareDecklistsForCoverage (text) from Data Manager to Coverage Module |
 | 27.09.20 | Card Analytics | Added calculating expected and actula card popularity, saving results as .csv file |
 | 11.10.20 | Card Analytics | Added plot generating for accumulated average and saving these plots to 'popularity' directory |
+| 25.10.20 | Card Analytics | Added HTML generation and conversion to .pdf |
 
 Next tasks:
 
@@ -106,9 +107,10 @@ DONE 7c. Try classification with card vote (each card votes for some archetype)
 DONE S1. Design algorithm for synergy checking
 DONE S2. Prepare 'proof of concept' with small ammount of cards to see if it works
 
-(--> Card Analytics )
+(--> Card Analytics ) 
 DONE 1. Visualise expected and actual card popularity over time (matplot lib, save images)
-TODO 2. Add template and generate .pdf file
+DONE 2. Add template and generate .pdf file
+3. Card win %
 
 (--> Database Module ) 
 D1. Create script to generate SQL inserts for matches
