@@ -71,6 +71,7 @@
 | 11.10.20 | Card Analytics | Added plot generating for accumulated average and saving these plots to 'popularity' directory |
 | 25.10.20 | Card Analytics | Added HTML generation and conversion to .pdf |
 | 31.10.20 | Archetype Detector | Added Tag kNN11 method (first method based on tags)|
+| 1.11.20 | Archetype Detector | Added Tag Center Point method (last supervised method)| 
 
 Next tasks:
 
@@ -94,9 +95,8 @@ DONE 7. Experiment with some radiuses to try classify the decks (find center of 
 DONE 7a. Try classification with kNN method without and with weighted votes
 DONE 7b. Try classification with parameter vote
 DONE 7c. Try classification with card vote (each card votes for some archetype)
-7d. Add TaggedVote method of classification
 DONE 7da. Add Tagged KNN11 method
-7db. Add Tagged Center Point Method
+DONE 7db. Add Tagged Center Point Method
 NOT RELEVANT 7dc. Add TagVote method (each tags votes fo archetype (similar to prameterVote)
 7e. Add MethodVote method for classifcation (or even weighted method vote - later)
 7f. Examine methods accuracy for different volumes of data (from 100 to 300 decks) -- use random subsets for data (generate data subsets first for each data point, use same data sets for each method -- from average
