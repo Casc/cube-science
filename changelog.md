@@ -73,6 +73,8 @@
 | 31.10.20 | Archetype Detector | Added Tag kNN11 method (first method based on tags)|
 | 1.11.20 | Archetype Detector | Added Tag Center Point method (last supervised method)| 
 | 2.11.20 | Archetype Detector | Added unsupervised classification for parameters and tags |
+| 5.11.20 | Archetype Detector | Added generation of graph and edges for parameters based clustering |
+| 7.11.20 | Archetype Detector | Added graph creation based on generated nodes and edges (ranks is not working)|
 
 Next tasks:
 
@@ -101,7 +103,7 @@ DONE 7db. Add Tagged Center Point Method
 NOT RELEVANT 7dc. Add TagVote method (each tags votes fo archetype (similar to prameterVote)
 7e. Add MethodVote method for classifcation (or even weighted method vote - later)
 7f. Examine methods accuracy for different volumes of data (from 100 to 300 decks) -- use random subsets for data (generate data subsets first for each data point, use same data sets for each method -- from average
-8. Add cardCloud method (calculate 1-2-3 step neighborhood for each deck)
+8. Add cardCloud method (calculate 1-2-3 step neighborhood for each deck)?
 DONE 9. Open classification = find deck groups but don't give them archetype name
 10. Refactor tagAnalytics module
 11. Create graphviz input to show steps in unsupervised hierarchical classification
