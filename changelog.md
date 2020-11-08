@@ -75,6 +75,9 @@
 | 2.11.20 | Archetype Detector | Added unsupervised classification for parameters and tags |
 | 5.11.20 | Archetype Detector | Added generation of graph and edges for parameters based clustering |
 | 7.11.20 | Archetype Detector | Added graph creation based on generated nodes and edges (ranks is not working)|
+| 8.11.20 | Archetype Detector | Added enhanced logging for clustering steps|
+| 8.11.20 | Archetype Detector | Added more information for graph nodes (style, number of decks) for better analysis)|
+| 8.11.20 | Archetype Detector | Added graph creation based generated nodes and edges for tags|
 
 Next tasks:
 
