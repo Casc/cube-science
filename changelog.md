@@ -78,6 +78,8 @@
 | 8.11.20 | Archetype Detector | Added enhanced logging for clustering steps|
 | 8.11.20 | Archetype Detector | Added more information for graph nodes (style, number of decks) for better analysis)|
 | 8.11.20 | Archetype Detector | Added graph creation based generated nodes and edges for tags|
+| 15.11.20 | Archetype Detector | Reviewed some deck data, added missing decks 15_7 |
+| 15.11.20 | Archetype Detector | Added graph creation with nodes based on players |
 
 Next tasks:
 
