@@ -80,6 +80,7 @@
 | 8.11.20 | Archetype Detector | Added graph creation based generated nodes and edges for tags|
 | 15.11.20 | Archetype Detector | Reviewed some deck data, added missing decks 15_7 |
 | 15.11.20 | Archetype Detector | Added graph creation with nodes based on players |
+| 17.11.20 | Archetype Detector | Added k-means clustering for paramaters based classification |
 
 Next tasks:
 
@@ -108,10 +109,10 @@ DONE 7db. Add Tagged Center Point Method
 NOT RELEVANT 7dc. Add TagVote method (each tags votes fo archetype (similar to prameterVote)
 7e. Add MethodVote method for classifcation (or even weighted method vote - later)
 7f. Examine methods accuracy for different volumes of data (from 100 to 300 decks) -- use random subsets for data (generate data subsets first for each data point, use same data sets for each method -- from average
-8. Add cardCloud method (calculate 1-2-3 step neighborhood for each deck)?
+NOT RELEVANT 8. Add cardCloud method (calculate 1-2-3 step neighborhood for each deck)?
 DONE 9. Open classification = find deck groups but don't give them archetype name
 10. Refactor tagAnalytics module
-11. Create graphviz input to show steps in unsupervised hierarchical classification
+DONE 11. Create graphviz input to show steps in unsupervised hierarchical classification
 
 (--> Synergy Checker ) new module idea
 DONE S1. Design algorithm for synergy checking
