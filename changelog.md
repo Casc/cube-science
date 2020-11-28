@@ -81,6 +81,8 @@
 | 15.11.20 | Archetype Detector | Reviewed some deck data, added missing decks 15_7 |
 | 15.11.20 | Archetype Detector | Added graph creation with nodes based on players |
 | 17.11.20 | Archetype Detector | Added k-means clustering for paramaters based classification |
+| 24.11.20 | Archetype Detector | Added graph creation for k-means clutering for parameters |
+| 28.11.20 | Archetype Detector | Updated graph creation for k-means clustering (parameters), created graphs from k=5 to k=15|
 
 Next tasks:
 
